@@ -12,7 +12,7 @@ const Hero2 = (props: Props) => {
                         className=" text-black font-bold"
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         transition={{ duration: 1.0 }}
                         variants={{
                             hidden: {
@@ -148,7 +148,7 @@ const Hero2 = (props: Props) => {
                 <motion.img
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: false, amount: 0.05 }}
                     transition={{ duration: 1.0, delay: 0.5 }}
                     variants={{
                         hidden: {
@@ -169,7 +169,7 @@ const Hero2 = (props: Props) => {
                 <motion.img
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: false, amount: 0.05 }}
                     transition={{ duration: 1.0, delay: 0.5 }}
                     variants={{
                         hidden: {
