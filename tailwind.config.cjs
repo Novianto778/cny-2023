@@ -5,9 +5,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 heading: ['"Shojumaru"', 'sans-serif'],
+                body: ['"Montserrat"', 'sans-serif'],
             },
             backgroundColor: {
-                hero2: '#F5ECDD',
+                hero2: '#121212',
             },
         },
     },
