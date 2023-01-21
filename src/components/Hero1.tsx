@@ -20,7 +20,7 @@ const Hero1 = (props: Props) => {
     }, []);
 
     return (
-        <div className="h-screen w-full bg-primary" ref={scrollRef}>
+        <div className="hero1 h-screen w-full bg-primary" ref={scrollRef}>
             <div className="h-full">
                 <div className="relative h-[30%]">
                     <motion.img

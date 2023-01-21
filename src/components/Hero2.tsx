@@ -5,11 +5,11 @@ type Props = {};
 
 const Hero2 = (props: Props) => {
     return (
-        <div className="h-screen w-full bg-hero2 flex relative overflow-hidden">
+        <div className="hero2 h-screen w-full bg-hero2 flex relative overflow-hidden">
             <div className="h-full w-full flex flex-col gap-y-8 md:flex-row md:justify-between items-center px-8 max-w-6xl mx-auto relative">
                 <div className="py-20 md:py-0">
                     <motion.h1
-                        className=" text-black font-bold"
+                        className="text-black font-bold"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.3 }}
