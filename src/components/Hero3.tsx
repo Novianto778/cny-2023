@@ -105,6 +105,29 @@ const Hero3 = (props: Props) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.05 }}
+                    transition={{ duration: 1.0, delay: 1 }}
+                    variants={{
+                        hidden: {
+                            opacity: 0,
+                            x: -100,
+                        },
+                        visible: {
+                            opacity: 1,
+                            x: 0,
+                        },
+                    }}
+                    className="absolute top-48 md:top-60 left-72 z-30"
+                >
+                    <img
+                        src="/hero3/pattern-2.png"
+                        alt=""
+                        className="w-6 md:w-16 "
+                    />
+                </motion.div>
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.05 }}
                     transition={{ duration: 1.0, delay: 0.5 }}
                     variants={{
                         hidden: {
@@ -184,16 +207,14 @@ const Hero3 = (props: Props) => {
                     variants={{
                         hidden: {
                             opacity: 0,
-                            x: -100,
-                            y: 10,
+                            x: -10,
                         },
                         visible: {
                             opacity: 1,
                             x: 0,
-                            y: 0,
                         },
                     }}
-                    className="absolute top-20 -left-10"
+                    className="absolute top-10 md:top-20 -left-10"
                 >
                     <img
                         src="/hero3/pattern-1.png"
@@ -223,7 +244,7 @@ const Hero3 = (props: Props) => {
                     <img
                         src="/hero3/flower-2.png"
                         alt=""
-                        className="w-20 md:w-48"
+                        className="w-32 md:w-48"
                     />
                 </motion.div>
                 <motion.div
@@ -356,6 +377,29 @@ const Hero3 = (props: Props) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.05 }}
+                    transition={{ duration: 1.0, delay: 1 }}
+                    variants={{
+                        hidden: {
+                            opacity: 0,
+                            x: -100,
+                        },
+                        visible: {
+                            opacity: 1,
+                            x: 0,
+                        },
+                    }}
+                    className="absolute top-48 md:top-60 right-72 z-30"
+                >
+                    <img
+                        src="/hero3/pattern-2.png"
+                        alt=""
+                        className="w-6 md:w-16 "
+                    />
+                </motion.div>
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.05 }}
                     transition={{ duration: 1.0, delay: 0.5 }}
                     variants={{
                         hidden: {
@@ -435,16 +479,14 @@ const Hero3 = (props: Props) => {
                     variants={{
                         hidden: {
                             opacity: 0,
-                            x: 100,
-                            y: 10,
+                            x: 10,
                         },
                         visible: {
                             opacity: 1,
                             x: 0,
-                            y: 0,
                         },
                     }}
-                    className="absolute top-20 -right-10"
+                    className="absolute top-10 md:top-20 -right-10"
                 >
                     <img
                         src="/hero3/pattern-1.png"
@@ -474,7 +516,7 @@ const Hero3 = (props: Props) => {
                     <img
                         src="/hero3/flower-2.png"
                         alt=""
-                        className="w-20 md:w-48"
+                        className="w-32 md:w-48"
                     />
                 </motion.div>
                 <motion.div
