@@ -6,8 +6,8 @@ type Props = {};
 const Hero2 = (props: Props) => {
     return (
         <div className="h-screen w-full bg-hero2 flex relative overflow-hidden">
-            <div className="h-auto w-full flex flex-col gap-y-8 md:flex-row md:justify-between items-center px-8 max-w-6xl mx-auto relative">
-                <div>
+            <div className="h-full w-full flex flex-col gap-y-8 md:flex-row md:justify-between items-center px-8 max-w-6xl mx-auto relative">
+                <div className="py-20 md:py-0">
                     <motion.h1
                         className=" text-black font-bold"
                         initial="hidden"
@@ -36,7 +36,7 @@ const Hero2 = (props: Props) => {
                         </span>
                     </motion.h1>
                 </div>
-                <div className="w-1/2 relative">
+                <div className="w-2/3 md:w-1/2 relative">
                     <motion.div
                         className="w-full"
                         initial="hidden"
@@ -120,7 +120,7 @@ const Hero2 = (props: Props) => {
                     }}
                     src="/hero2/gold-1.png"
                     alt=""
-                    className="w-20 md:w-32 absolute bottom-40 md:bottom-20 left-[25%] leftright"
+                    className="w-20 md:w-32 absolute bottom-60 md:bottom-20 left-[20%] md:left-[25%] leftright"
                 />
                 <motion.img
                     initial="hidden"
@@ -141,7 +141,7 @@ const Hero2 = (props: Props) => {
                     }}
                     src="/hero2/gold-2.png"
                     alt=""
-                    className="w-20 md:w-32 absolute bottom-32 md:bottom-10 left-[38%] leftright"
+                    className="w-20 md:w-32 absolute bottom-48 md:bottom-10 left-[45%] md:left-[38%] leftright"
                 />
             </div>
             <div>

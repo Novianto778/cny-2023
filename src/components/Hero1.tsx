@@ -63,11 +63,11 @@ const Hero1 = (props: Props) => {
                     />
                 </div>
                 <div className="h-[50%]">
-                    <div>
+                    <div className="relative">
                         <motion.img
                             src="/hero1/flower-left.png"
                             alt=""
-                            className="w-48 md:w-96 absolute -left-10 md:top-20"
+                            className="w-48 md:w-96 absolute -left-10 md:-top-20"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{
@@ -89,7 +89,7 @@ const Hero1 = (props: Props) => {
                         <motion.img
                             src="/hero1/flower-right.png"
                             alt=""
-                            className="w-48 md:w-96 absolute -right-10 md:top-20"
+                            className="w-48 md:w-96 absolute -right-10 md:-top-20"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: false, amount: 0.1 }}
