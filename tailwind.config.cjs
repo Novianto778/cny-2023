@@ -6,6 +6,9 @@ module.exports = {
             fontFamily: {
                 heading: ['"Shojumaru"', 'sans-serif'],
             },
+            backgroundColor: {
+                hero2: '#F5ECDD',
+            },
         },
     },
     plugins: [],

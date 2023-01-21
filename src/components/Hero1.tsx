@@ -1,10 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 type Props = {};
 
 const Hero1 = (props: Props) => {
-    const scrollRef = useRef(null);
+    const scrollRef = useRef<HTMLDivElement>(null);
+    const elementHeight = scrollRef.current?.clientHeight;
+    const [height, setHeight] = React.useState(0);
+    const isBottomOfPage = height >= elementHeight!;
+
+    useEffect(() => {
+        const event = window?.addEventListener('scroll', () => {
+            setHeight(window.scrollY);
+        });
+
+        return () => {
+            window?.removeEventListener('scroll', event as any);
+        };
+    }, []);
+
     return (
         <div className="h-screen w-full bg-primary" ref={scrollRef}>
             <div className="h-full">
@@ -127,7 +141,7 @@ const Hero1 = (props: Props) => {
                             }}
                         >
                             <div className="flex flex-col justify-center items-center relative">
-                                <h6 className="text-5xl text-white font-bold absolute top-[30%] hero1-heading">
+                                <h6 className="text-3xl md:text-5xl text-white font-bold absolute top-[30%] hero1-heading">
                                     2023
                                 </h6>
                                 <img
@@ -168,7 +182,7 @@ const Hero1 = (props: Props) => {
                                 className="h-40 md:h-32 object-contain bg-cover"
                             />
                         </div>
-                        <div>
+                        <div className={`${isBottomOfPage ? 'hidden' : ''}`}>
                             <motion.img
                                 src="/hero1/frame-left.png"
                                 alt=""
@@ -177,7 +191,8 @@ const Hero1 = (props: Props) => {
                                 whileInView="visible"
                                 viewport={{
                                     once: false,
-                                    amount: 0.1,
+                                    amount: 0.3,
+                                    root: scrollRef,
                                 }}
                                 transition={{ duration: 0.5 }}
                                 variants={{
@@ -197,7 +212,11 @@ const Hero1 = (props: Props) => {
                                 className="w-48 absolute -bottom-12 -right-12"
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: false, amount: 0.1 }}
+                                viewport={{
+                                    once: false,
+                                    amount: 0.3,
+                                    root: scrollRef,
+                                }}
                                 transition={{ duration: 0.5 }}
                                 variants={{
                                     hidden: {
