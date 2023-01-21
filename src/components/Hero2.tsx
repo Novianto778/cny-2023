@@ -25,12 +25,12 @@ const Hero2 = (props: Props) => {
                             },
                         }}
                     >
-                        <span className="text-3xl md:text-5xl font-heading tracking-widest text-white">
+                        <span className="text-4xl md:text-5xl font-heading tracking-widest text-white">
                             Year
                         </span>
                         <br />
-                        <span className="text-3xl md:text-5xl font-heading text-red-700">
-                            <span className="text-3xl md:text-6xl">of the</span>{' '}
+                        <span className="text-4xl md:text-5xl font-heading text-red-700">
+                            <span className="text-5xl md:text-6xl">of the</span>{' '}
                             <br />
                             Rabbit
                         </span>

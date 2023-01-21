@@ -108,7 +108,7 @@ const Hero1 = (props: Props) => {
                     </div>
                     <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
                         <motion.h1
-                            className="text-4xl font-heading hero1-heading text-center relative"
+                            className="text-4xl font-heading hero1-heading text-center relative z-30"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: false, amount: 0 }}
