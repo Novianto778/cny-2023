@@ -5,8 +5,8 @@ type Props = {};
 
 const Hero2 = (props: Props) => {
     return (
-        <div className="h-screen w-full bg-hero2 relative overflow-hidden">
-            <div className="h-full w-full flex justify-between items-center px-8 max-w-6xl mx-auto relative">
+        <div className="h-screen w-full bg-hero2 flex relative overflow-hidden">
+            <div className="h-auto w-full flex flex-col gap-y-8 md:flex-row md:justify-between items-center px-8 max-w-6xl mx-auto relative">
                 <div>
                     <motion.h1
                         className=" text-black font-bold"

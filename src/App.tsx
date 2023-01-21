@@ -4,7 +4,7 @@ import Hero2 from './components/Hero2';
 
 function App() {
     return (
-        <div className="h-full">
+        <div className="h-full w-screen overflow-hidden">
             <Hero1 />
             <Hero2 />
         </div>
